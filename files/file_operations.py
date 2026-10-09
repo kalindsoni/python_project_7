@@ -38,50 +38,50 @@ class file_operations:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-    def FO():
-        while True:
+def FO():
+    while True:
+        file_ops = file_operations()
 
 
-            print("\n===== File Operations =====")
-            print("1. Create a file")
-            print("2. Write to a file")
-            print("3. Append to a file")
-            print("4. Read a file")
-            print("5. Back to main menu")
+        print("\n===== File Operations =====")
+        print("1. Create a file")
+        print("2. Write to a file")
+        print("3. Append to a file")
+        print("4. Read a file")
+        print("5. Back to main menu")
 
-            choice = input("Enter your choice: ")
+        choice = input("Enter your choice: ")
 
-            if choice == "1":
+        if choice == "1":
 
-                filename = input("Enter filename: ")
+            filename = input("Enter filename: ")
 
-                file_ops.create_file(filename)
+            file_ops.create_file(filename)
 
-            elif choice == "2":
+        elif choice == "2":
 
-                filename = input("Enter filename: ")
+            filename = input("Enter filename: ")
 
-                file_ops.write_file(filename)
+            file_ops.write_file(filename)
 
-            elif choice == "3":
+        elif choice == "3":
 
-                filename = input("Enter filename: ")
+            filename = input("Enter filename: ")
 
-                file_ops.append_file(filename)
+            file_ops.append_file(filename)
 
-            elif choice == "4":
+        elif choice == "4":
 
-                filename = input("Enter filename: ")
+            filename = input("Enter filename: ")
 
-                file_ops.read_file(filename)
+            file_ops.read_file(filename)
 
-            elif choice == "5":
+        elif choice == "5":
 
-                file_ops.back_to_main_menu()
-                break
+            file_ops.back_to_main_menu()
+            break
 
-            else:
-                print("Invalid choice.")
+        else:
+            print("Invalid choice.")
 
 
-file_ops = file_operations()
