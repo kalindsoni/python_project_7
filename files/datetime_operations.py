@@ -18,7 +18,7 @@ class MultiUtilityToolkit:
         print("Difference between dates:", delta.days, "days")
 
     def format_date(self, date):
-        formatted_date = datetime.datetime.strptime(date, "%Y-%m-%d")
+        formatted_date = datetime.datetime.strptime(date)
         print("Formatted date:", formatted_date)
 
     def stopwatch(self):
@@ -43,45 +43,53 @@ class MultiUtilityToolkit:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-class datetime:
-    def Dtime():
-        while True:
-            toolkit = MultiUtilityToolkit()
+def Dtime():
 
-            print("\n===== Date/Time Operations =====")
-            print("1. Current date and time")
-            print("2. Difference between two dates")
-            print("3. Format a date")
-            print("4. Stopwatch")
-            print("5. Countdown timer")
-            print("6. Back to main menu")
+    while True:
+        toolkit = MultiUtilityToolkit()
 
-            choice = input("Enter your choice: ")
+        print("\n===== Date/Time Operations =====")
+        print("1. Current date and time")
+        print("2. Difference between two dates")
+        print("3. Format a date")
+        print("4. Stopwatch")
+        print("5. Countdown timer")
+        print("6. Back to main menu")
 
-            if choice == "1":
-                toolkit.current_time()
+        choice = input("Enter your choice: ")
 
-            elif choice == "2":
-                date1 = input("Enter first date (YYYY-MM-DD): ")
-                date2 = input("Enter second date (YYYY-MM-DD): ")
+        if choice == "1":
+            toolkit.current_time()
 
-                toolkit.difference_between_dates(date1, date2)
+        elif choice == "2":
+            date1 = input("Enter first date (YYYY-MM-DD): ")
+            date2 = input("Enter second date (YYYY-MM-DD): ")
 
-            elif choice == "3":
-                date = input("Enter date (YYYY-MM-DD): ")
-                toolkit.format_date(date)
+            toolkit.difference_between_dates(date1, date2)
 
-            elif choice == "4":
-                toolkit.stopwatch()
+        elif choice == "3":
+            date = input("Enter date (YYYY-MM-DD): ")
+            toolkit.format_date(date)
 
-            elif choice == "5":
-                toolkit.countdown()
+        elif choice == "4":
+            toolkit.stopwatch()
 
-            elif choice == "6":
-                toolkit.back_to_main_menu()
-                break
+        elif choice == "5":
+            toolkit.countdown()
 
-            else:
-                print("Invalid choice.")
+        elif choice == "6":
+            toolkit.back_to_main_menu()
+            break
+
+
+        else:
+            print("Invalid choice.")
+
+
+
+
+
+
+
 
 # https://github.com/Pushkar765/Moduler-Packakeger.py.git
