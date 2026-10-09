@@ -18,30 +18,29 @@ class module_explorer:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-    def ME():
+def ME():
+    while True:
+        
+        explorer = module_explorer()
 
-        while True:
+        print("\n===== Module Explorer =====")
+        print("1. Explore module attributes")
+        print("2. Back to main menu")
 
-            print("\n===== Module Explorer =====")
-            print("1. Explore module attributes")
-            print("2. Back to main menu")
+        choice = input("Enter your choice: ")
 
-            choice = input("Enter your choice: ")
+        if choice == "1":
 
-            if choice == "1":
+            module_name = input("Enter module name: ")
 
-                module_name = input("Enter module name: ")
+            explorer.explore_module_attributes(
+                module_name
+            )
 
-                explorer.explore_module_attributes(
-                    module_name
-                )
+        elif choice == "2":
 
-            elif choice == "2":
+            explorer.back_to_main_menu()
+            break
 
-                explorer.back_to_main_menu()
-                break
-
-            else:
-                print("Invalid choice.")
-
-explorer = module_explorer()
+        else:
+            print("Invalid choice.")
