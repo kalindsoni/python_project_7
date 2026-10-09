@@ -43,104 +43,105 @@ class mathematical_operation:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-    def maths():
-        while True:
-            print("\n===== Mathematical Operations =====")
-            print("1. Factorial")
-            print("2. Compound interest")
-            print("3. Trigonometric calculation")
-            print("4. Area of geometric shapes")
-            print("5. Back to main menu")
+def maths():
+    
+    math_ops = mathematical_operation()
+    while True:
+        print("\n===== Mathematical Operations =====")
+        print("1. Factorial")
+        print("2. Compound interest")
+        print("3. Trigonometric calculation")
+        print("4. Area of geometric shapes")
+        print("5. Back to main menu")
 
-            choice = input("Enter your choice: ")
+        choice = input("Enter your choice: ")
 
-            if choice == "1":
+        if choice == "1":
 
-                num = int(input("Enter a number: "))
+            num = int(input("Enter a number: "))
 
-                result = math_ops.factorial_(num)
+            result = math_ops.factorial_(num)
 
-                print(f"Factorial of {num} is: {result}")
+            print(f"Factorial of {num} is: {result}")
 
-            elif choice == "2":
+        elif choice == "2":
 
-                principal = float(input("Enter principal amount: "))
-                rate = float(input("Enter interest rate (%): "))
-                years = float(input("Enter time in years: "))
+            principal = float(input("Enter principal amount: "))
+            rate = float(input("Enter interest rate (%): "))
+            years = float(input("Enter time in years: "))
 
-                amount = math_ops.compound_interest(
-                    principal,
-                    rate,
-                    years
+            amount = math_ops.compound_interest(
+                principal,
+                rate,
+                years
+            )
+
+            print(f"Compound amount: {amount}")
+
+        elif choice == "3":
+
+            angle = float(input("Enter angle in degrees: "))
+
+            sine, cosine, tangent = (
+                math_ops.trigonometric_calculation(angle)
+            )
+
+            print(f"Sine: {sine}")
+            print(f"Cosine: {cosine}")
+            print(f"Tangent: {tangent}")
+
+        elif choice == "4":
+
+            shape = input(
+                "Enter shape (circle, rectangle, triangle): "
+            ).lower()
+
+            if shape == "circle":
+
+                radius = float(input("Enter radius: "))
+
+                area = math_ops.area_of_geometric_shapes(
+                    shape,
+                    radius
                 )
 
-                print(f"Compound amount: {amount}")
+                print(f"Area of circle: {area}")
 
-            elif choice == "3":
+            elif shape == "rectangle":
 
-                angle = float(input("Enter angle in degrees: "))
+                length = float(input("Enter length: "))
+                width = float(input("Enter width: "))
 
-                sine, cosine, tangent = (
-                    math_ops.trigonometric_calculation(angle)
+                area = math_ops.area_of_geometric_shapes(
+                    shape,
+                    length,
+                    width
                 )
 
-                print(f"Sine: {sine}")
-                print(f"Cosine: {cosine}")
-                print(f"Tangent: {tangent}")
+                print(f"Area of rectangle: {area}")
 
-            elif choice == "4":
+            elif shape == "triangle":
 
-                shape = input(
-                    "Enter shape (circle, rectangle, triangle): "
-                ).lower()
+                base = float(input("Enter base: "))
+                height = float(input("Enter height: "))
 
-                if shape == "circle":
+                area = math_ops.area_of_geometric_shapes(
+                    shape,
+                    base,
+                    height
+                )
 
-                    radius = float(input("Enter radius: "))
-
-                    area = math_ops.area_of_geometric_shapes(
-                        shape,
-                        radius
-                    )
-
-                    print(f"Area of circle: {area}")
-
-                elif shape == "rectangle":
-
-                    length = float(input("Enter length: "))
-                    width = float(input("Enter width: "))
-
-                    area = math_ops.area_of_geometric_shapes(
-                        shape,
-                        length,
-                        width
-                    )
-
-                    print(f"Area of rectangle: {area}")
-
-                elif shape == "triangle":
-
-                    base = float(input("Enter base: "))
-                    height = float(input("Enter height: "))
-
-                    area = math_ops.area_of_geometric_shapes(
-                        shape,
-                        base,
-                        height
-                    )
-
-                    print(f"Area of triangle: {area}")
-
-                else:
-                    print("Invalid shape.")
-
-            elif choice == "5":
-                math_ops.back_to_main_menu()
-                break
+                print(f"Area of triangle: {area}")
 
             else:
-                print("Invalid choice.")
+                print("Invalid shape.")
 
-        math_ops = mathematical_operation()
+        elif choice == "5":
+            math_ops.back_to_main_menu()
+            break
+
+        else:
+            print("Invalid choice.")
+
 
 
