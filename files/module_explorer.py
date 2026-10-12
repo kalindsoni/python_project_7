@@ -18,7 +18,7 @@ class module_explorer:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-def ME():
+def Module():
     while True:
         
         explorer = module_explorer()
