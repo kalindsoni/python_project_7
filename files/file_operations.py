@@ -38,7 +38,7 @@ class file_operations:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-def FO():
+def FOperation():
     while True:
         file_ops = file_operations()
 
