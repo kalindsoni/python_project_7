@@ -9,7 +9,7 @@ class unique_identifier:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-def UI():
+def Unique_Indemnifier():
     while True:
         uuid_gen = unique_identifier()
 
