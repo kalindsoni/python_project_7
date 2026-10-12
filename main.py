@@ -2,7 +2,7 @@ from files.datetime_operations import Dtime
 from files.mathematical_operations import maths
 from files.random_data import RD
 from files.unique_identifier import UI
-from files.file_operations import FO
+from files.file_operations import FOperation
 from files.module_explorer import ME
 
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
                 UI()
 
             case 5:
-                FO()
+                FOperation()
 
             case 6:
                 ME()
