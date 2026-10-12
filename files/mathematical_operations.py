@@ -45,8 +45,9 @@ class mathematical_operation:
 
 def maths():
     
-    math_ops = mathematical_operation()
     while True:
+        math_ops = mathematical_operation()
+        
         print("\n===== Mathematical Operations =====")
         print("1. Factorial")
         print("2. Compound interest")
