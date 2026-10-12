@@ -21,7 +21,7 @@ class random_data_generation:
     def back_to_main_menu(self):
         print("Returning to main menu...")
 
-def RD():
+def Random():
     while True:
         random_gen = random_data_generation()
 
