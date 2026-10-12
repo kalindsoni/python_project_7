@@ -1,7 +1,7 @@
 from files.datetime_operations import Dtime
 from files.mathematical_operations import maths
 from files.random_data import RD
-from files.unique_identifier import UI
+from files.unique_identifier import Random
 from files.file_operations import FOperation
 from files.module_explorer import Module
 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
                 maths()
 
             case 3:
-                RD()
+                Random()
 
             case 4:
                 UI()
