@@ -16,7 +16,7 @@ This repository serves as a place to explore the project's functionality, unders
 🌱 Extendable — Can be improved with new features and enhancements.
 🎬 Video Explanation
 
-📺 Video Link: Click here to watch the full explanation
+📺 Video Link: (https://drive.google.com/file/d/1Fsk23MIl8DVte5eeVWUk02KHAdVWmRQb/view?usp=drivesdk)
 
 Video contents:
 
