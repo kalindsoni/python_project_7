@@ -37,32 +37,9 @@ Update this list to reflect the actual libraries, frameworks, and tools used in 
 
 ⚡ Installation & Setup
 
-Follow these steps to run the project on your computer.
+Follow these steps to run the project on your computer
 
-1. Prerequisites
-Python installed on your system
-Git installed on your system
-A code editor such as VS Code (recommended)
-2. Clone the Repository
-git clone https://github.com/kalindsoni/python_project_7.git
-
-3. Navigate to the Project Folder
-cd python_project_7
-
-4. Create a Virtual Environment (Recommended)
-
-Windows:
-
-python -m venv venv
-venv\Scripts\activate
-
-
-macOS / Linux:
-
-python3 -m venv venv
-source venv/bin/activate
-
-5. Install Dependencies
+1. Install Dependencies
 
 If your repository contains a requirements.txt file, run:
 
@@ -71,7 +48,7 @@ pip install -r requirements.txt
 
 If the project has no external dependencies, you can skip this step.
 
-6. Run the Project
+2. Run the Project
 
 Identify the main Python file in your repository and run it:
 
